@@ -1,10 +1,12 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
+from os import getenv
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:database@34.105.222.230/luckyduck' # Set the connection string to connect to the database
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SQLALCHEMY_DATABASE_URI'] = getenv('DB_URI')
+app.config['SECRET_KEY'] = getenv('SECRET_KEY')
+
 db = SQLAlchemy(app)
 
 from application import routes
