@@ -5,8 +5,12 @@
 
 <form method='POST' action=>
 	{{ form.hidden_tag() }}
-	{{ form.categories.label }} {{ form.categories }}
+	{{ form.title.label }} {{ form.title }}
 	<br><br>
-	{{ form. submit }}
+	{{ form.description.label }} {{ form.description }}
+	<br><br>
+	{{ form.listing.label }} {{ form.listing }}
+	<br><br>
+	{{ form.submit }}
 </form>
 {% endblock body_content %}
