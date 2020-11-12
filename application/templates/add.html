@@ -1,16 +1,16 @@
 {% extends 'layout.html' %}
-{% block body_content %}
+{% block body %}
 
 <h1>Create A Listing</h1>
 
-<form method='POST' action=>
+<form action='' method='POST'>
 	{{ form.hidden_tag() }}
 	{{ form.title.label }} {{ form.title }}
 	<br><br>
-	{{ form.description.label }} {{ form.description }}
+	{{ form.list_description.label }} {{ form.list_description }}
 	<br><br>
-	{{ form.listing.label }} {{ form.listing }}
+	{{ form.categories.label }} {{ form.categories }}
 	<br><br>
 	{{ form.submit }}
 </form>
-{% endblock body_content %}
+{% endblock body %}
