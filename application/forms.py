@@ -15,7 +15,10 @@ class ListingForm(FlaskForm):
                 DataRequired()
                 ]
             )
-    categories = SelectField('All Categories',
+    submit = SubmitField('Post Listing')
+
+class CategoryForm(FlaskForm):
+     list_category = SelectField('All Categories',
             choices=[('antiques', 'Antiques'), ('art', 'Art'), ('baby', 'Baby'),
                 ('books', 'Books, Comics & Magazines'), ('office', 'Business, Office & Industrial'),
                 ('cameras', 'Cameras & Photography'), ('vehicles', 'Cars, Motorcycles & Vehicles'),
@@ -28,4 +31,3 @@ class ListingForm(FlaskForm):
                 ('videogames', 'Video Games & Console'), ('wholesale', 'Wholesale & Job Lots'), ('everythingelse', 'Everything Else')
                 ]
             )
-    submit = SubmitField('Post Listing')
