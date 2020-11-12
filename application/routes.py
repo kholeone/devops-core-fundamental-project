@@ -19,6 +19,6 @@ def add():
         db.session.add(lister)
         db.session.commit()
         return redirect(url_for('index'))
-    return render_template('add.html', title="Create Listing", form=form)
+    return render_template('add.html', form=form)
 
 
