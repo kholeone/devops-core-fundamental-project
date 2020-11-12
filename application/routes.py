@@ -5,7 +5,8 @@ from application.forms import ListingForm, CategoryForm
 
 @app.route('/', methods=['POST', 'GET'])
 def index():
-    return render_template('index.html', allListings = Listing.query.all())
+    all_listing = Listing.query.all()
+    return render_template('index.html', all_listing=all_listing)
 
 @app.route('/add', methods=['POST', 'GET'])
 def add():

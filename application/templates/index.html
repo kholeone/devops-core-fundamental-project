@@ -1,6 +1,28 @@
 {% extends 'layout.html' %}
 {% block body %}
 
-<p> Hello my friends </P>
+<p> Hello my fri ends </P>
 
+<style>
+.listings {
+  background-color: tomato;
+  color: white;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+</style>
+
+
+{% for listing in all_listing %}
+
+<div class="listings">
+
+<p><strong><span style="text-decoration: underline;">{{ listing.title }}</span></strong></p>
+{{ listing.list_description }}
+
+</div>
+{% endfor %}
+
+</p>
 {% endblock body %}
