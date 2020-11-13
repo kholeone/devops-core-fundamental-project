@@ -26,13 +26,13 @@ def update(id):
     form  = ListingForm()
     listing = Listing.query.get(id)
     if form.validate_on_submit():
-        listing_title = form.title.data,
-        listing_description = form.list_description.data
+        listing.title = form.title.data,
+        listing.list_description = form.list_description.data
         db.session.commit()
         return redirect(url_for('index'))
     elif request.method == 'GET':
-        form.title.data = listing_title,
-        form.list_description.data = listing_description
+        form.title.data = listing.title,
+        form.list_description.data = listing.list_description
     return render_template('update.html', title='Update Listing', form=form)
 
 
