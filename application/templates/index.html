@@ -20,9 +20,17 @@
 
 <p><strong><span style="text-decoration: underline;">{{ listing.title }}</span></strong></p>
 {{ listing.list_description }}
+<br>
+<form action='{{url_for('delete', id=listing.id) }}'>
+
+<input type=submit value="Delete">
+
+</form>
 
 </div>
+
 {% endfor %}
 
 </p>
+
 {% endblock body %}
