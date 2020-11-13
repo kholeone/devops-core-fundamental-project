@@ -1,7 +1,7 @@
 {% extends 'layout.html' %}
 {% block body %}
 
-<p> Hello my fri ends </P>
+<p>See our latest listings!</P>
 
 <style>
 .listings {
@@ -20,7 +20,7 @@
 
 <p><strong><span style="text-decoration: underline;">{{ listing.title }}</span></strong></p>
 {{ listing.list_description }}
-<br>
+<br><br>
 <form action='{{url_for('delete', id=listing.id) }}'>
 
 <input type=submit value="Delete">
