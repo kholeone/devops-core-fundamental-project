@@ -21,4 +21,10 @@ def add():
         return redirect(url_for('index'))
     return render_template('add.html', form=form)
 
+@app.route('/delete/<int:id>')
+def delete(id):
+    delete_listing = Listing.query.get(id)
+    db.session.delete(delete_listing)
+    db.session.commit()
+    return redirect(url_for('index'))
 
