@@ -5,7 +5,7 @@ class Listing(db.Model):
     list_title = db.Column(db.String(80), nullable = False)
     list_location = db.Column(db.String(80), nullable = False)
     list_price = db.Column(db.Float, nullable = False)
-    listing = db.relationship('Detail', backref='listing')
+    listing = db.relationship('Detail', cascade="all, delete", backref='listing')
 
 class Detail(db.Model):
     id = db.Column(db.Integer, primary_key=True)

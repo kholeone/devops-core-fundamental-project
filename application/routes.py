@@ -57,23 +57,17 @@ def add_detail(id):
         detailer = Detail(
             detail_description = form.detail_description.data,
             detail_category = form.detail_category.data,
-            listing_id = listing   
+            listing_id = id    
         )
         db.session.add(detailer)
         db.session.commit()
         return redirect(url_for('detail', id=id))
     return render_template('add_detail.html', form=form,listing=Listing.query.get(id))
 
-@app.route('/update_detail/<int:id>', methods=['POST', 'GET'])
-def update_detail(id):
-    form = DetailForm()
-    detailing = Detail.query.get(id)
-    if form.validate_on_submit():
-        detailing.detail_description = form.detail_description.data,
-        detailing.detail_category = form.detail_category.data
-        db.session.commit()
-        return redirect(url_for('detail', id=detail.listing_id))
-    elif request.method == 'GET':
-        form.detail_description.data = detailing.detail_description,
-        form.detail_category.data = detailing.detail_category
-    return render_template('update_detail.html', title='Update Listing Detail', form=form, listing = Listing.query.get(detail.listing_id))
+
+@app.route('/delete_detail/<int:id>')
+def delete_detail(id):
+    delete_detail = Detail.query.get(id)
+    db.session.delete(delete_detail)
+    db.session.commit()
+    return redirect(url_for('index'))
