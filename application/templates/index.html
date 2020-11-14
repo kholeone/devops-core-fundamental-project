@@ -18,8 +18,10 @@
 
 <div class="listings">
 
-<p><strong><span style="text-decoration: underline;">{{ listing.title }}</span></strong></p>
-{{ listing.list_description }}
+<p><strong><span style="text-decoration: underline;">{{ listing.list_title }}</span></strong></p>
+{{ listing.list_location }}
+<br><br>
+£{{ listing.list_price  }}
 <br><br>
 <form action='{{url_for('delete', id=listing.id) }}'>
 

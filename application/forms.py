@@ -1,24 +1,35 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, SelectField,  SubmitField
+from wtforms import StringField, SelectField, DecimalField,  SubmitField
 from wtforms.validators import DataRequired, ValidationError
 
-from application.models import Listing, Category
+from application.models import Listing, Detail
 
 class ListingForm(FlaskForm):
-    title = StringField('Title',
+     list_title = StringField('Title',
             validators = [
                 DataRequired()
                 ]
             )
-    list_description = StringField('Description',
+     list_location = StringField('Location',
             validators = [
                 DataRequired()
                 ]
             )
-    submit = SubmitField('Post Listing')
+     list_price = DecimalField('Price',
+            places=2, rounding=None, 
+            validators = [
+                DataRequired()
+                ]
+            )
+     submit = SubmitField('Post Listing')
 
-class CategoryForm(FlaskForm):
-     list_category = SelectField('All Categories',
+class DetailForm(FlaskForm):
+     detail_description = StringField('Description',
+            validators = [
+                DataRequired()
+                ]
+            )
+     detail_category = SelectField('All Categories',
             choices=[('antiques', 'Antiques'), ('art', 'Art'), ('baby', 'Baby'),
                 ('books', 'Books, Comics & Magazines'), ('office', 'Business, Office & Industrial'),
                 ('cameras', 'Cameras & Photography'), ('vehicles', 'Cars, Motorcycles & Vehicles'),
