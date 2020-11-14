@@ -1,27 +1,31 @@
 {% extends 'layout.html' %}
 {% block body %}
 
-<p>Listing Details</p>
-
 <p><strong><span style="text-decoration: underline;">{{ listing.list_title }}</span></strong></p>
 {{ listing.list_location }}
 <br><br>
 £{{ listing.list_price  }}
 
 {% for detail in listing_details %}
-
-{{ detail.detail_description }}
 <br><br>
-{{ detail.detail_category }}
-
-</form>
+Category:{{ detail.detail_category }}
+<br><br>
+{{ detail.detail_description }}
 
 {% endfor %}
 
+<br><br>
 <form action='{{url_for('add_detail', id=listing.id) }}'>
 
 <input type=submit value="Add Details">
 
-</form>
+</form
+<br><br>
+<form action='{{url_for('update_detail', id=listing.id) }}'>
+
+<input type=submit value="Update Details">
+
+</form
+<br>
 
 {% endblock body %}                   
