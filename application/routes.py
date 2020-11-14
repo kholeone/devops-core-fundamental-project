@@ -47,9 +47,8 @@ def delete(id):
     return redirect(url_for('index'))
 
 @app.route('/detail/<int:id>', methods=['POST', 'GET'])
-def detail():
-    all_detail = Detail.query.all()
-    return render_template('detail.html', all_detail=all_detail)
+def detail(id):
+    return render_template('detail.html', listing_details = Detail.query.filter_by(listing_id=id).all(), listing = Listing.query.get(id) )
 
 @app.route('/add_detail/<int:id>', methods=['POST', 'GET'])
 def add_detail(id):
@@ -57,7 +56,8 @@ def add_detail(id):
     if form.validate_on_submit():
         detailer = Detail(
             detail_description = form.detail_description.data,
-            detail_category = form.detail_category.data
+            detail_category = form.detail_category.data,
+            listing_id = listing   
         )
         db.session.add(detailer)
         db.session.commit()

@@ -42,3 +42,4 @@ class DetailForm(FlaskForm):
                 ('videogames', 'Video Games & Console'), ('wholesale', 'Wholesale & Job Lots'), ('everythingelse', 'Everything Else')
                 ]
             )
+     submit = SubmitField('List with Details.')

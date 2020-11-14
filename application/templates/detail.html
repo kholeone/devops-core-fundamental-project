@@ -1,6 +1,27 @@
 {% extends 'layout.html' %}
 {% block body %}
 
-<p>Listing Details</P>
+<p>Listing Details</p>
 
-{% endblock body %}
+<p><strong><span style="text-decoration: underline;">{{ listing.list_title }}</span></strong></p>
+{{ listing.list_location }}
+<br><br>
+£{{ listing.list_price  }}
+
+{% for detail in listing_details %}
+
+{{ detail.detail_description }}
+<br><br>
+{{ detail.detail_category }}
+
+</form>
+
+{% endfor %}
+
+<form action='{{url_for('add_detail', id=listing.id) }}'>
+
+<input type=submit value="Add Details">
+
+</form>
+
+{% endblock body %}                   
