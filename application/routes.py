@@ -27,9 +27,9 @@ def update(id):
     form  = ListingForm()
     listing = Listing.query.get(id)
     if form.validate_on_submit():
-        list_title = form.list_title.data,
-        list_location = form.list_location.data,
-        list_price = form.list_price.data
+        listing.list_title = form.list_title.data,
+        listing.list_location = form.list_location.data,
+        listing.list_price = form.list_price.data
         db.session.commit()
         return redirect(url_for('index'))
     elif request.method == 'GET':
@@ -46,4 +46,20 @@ def delete(id):
     db.session.commit()
     return redirect(url_for('index'))
 
+@app.route('/detail/<int:id>', methods=['POST', 'GET'])
+def detail():
+    all_detail = Detail.query.all()
+    return render_template('detail.html', all_detail=all_detail)
 
+@app.route('/add_detail/<int:id>', methods=['POST', 'GET'])
+def add_detail(id):
+    form = DetailForm()
+    if form.validate_on_submit():
+        detailer = Detail(
+            detail_description = form.detail_description.data,
+            detail_category = form.detail_category.data
+        )
+        db.session.add(detailer)
+        db.session.commit()
+        return redirect(url_for('detail', id=id))
+    return render_template('add_detail.html', form=form,listing=Listing.query.get(id))

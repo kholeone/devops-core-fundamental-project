@@ -1,0 +1,10 @@
+<h1>Listing Details</h1>
+
+<form action='' method='POST'>
+	{{ form.hidden_tag() }}
+	{{ form.detail_description.label }} {{ form.detail_description }}
+	<br><br>
+	{{ form.detail_category.label }} {{ form.detail_category }}
+	<br><br>
+	{{ form.submit }}
+</form>
