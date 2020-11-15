@@ -9,8 +9,8 @@ class TestBase(TestCase):
     def create_app(self):
 
         # Pass in testing configurations for the app. Here we use sqlite without a persistent database for our tests.
-        app.config.update(SQLALCHEMY_DATABASE_URI="sqlite:///data.db",
-                SECRET_KEY='sdfijsdiofsdjf',
+        app.config.update(SQLALCHEMY_DATABASE_URI="sqlite:///test.db",
+                SECRET_KEY='test-server',
                 DEBUG=True
                 )
         return app
@@ -45,31 +45,30 @@ class TestViews(TestBase):
 
     def test_index_get(self):
 
-        response = self.client.get(url_for('index'))
+        response = self.client.get(url_for('index', id=1))
         self.assertEqual(response.status_code,200)
 
     def test_add_get(self):
-        response = self.client.get(url_for('add'))
+        response = self.client.get(url_for('add', id=1))
         self.assertEqual(response.status_code,200)
 
     def test_update_get(self):
-        response = self.client.get(url_for('update'))
+        response = self.client.get(url_for('update', id=1))
         self.assertEqual(response.status_code,200)
 
     def test_delete_get(self):
-        response = self.client.get(url_for('delete'))
+        response = self.client.get(url_for('delete', id=1))
         self.assertEqual(response.status_code,302) 
 
     def test_detail_get(self):
-        response = self.client.get(url_for('detail'))
+        response = self.client.get(url_for('detail', id=1))
         self.assertEqual(response.status_code,200) 
 
     def test_add_detail_get(self):
-        response = self.client.get(url_for('add_detail'))
+        response = self.client.get(url_for('add_detail', id=1))
         self.assertEqual(response.status_code,200)
    
     def test_update_detail_get(self):
-        response = self.client.get(url_for('update_detail'))
+        response = self.client.get(url_for('update_detail', id=1))
         self.assertEqual(response.status_code,302)
-
 
