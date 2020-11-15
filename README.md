@@ -54,6 +54,11 @@ which has gone through many iterations to provide the most realistic and logical
 
 ## Database Structure
 
+Here is a Entity relationship diagram (ERD). This is the final database structure chosen to build with the application.
+It is able to store all the information in the database, able to create, read, update and delete everything associated database.
+
+![alt text](https://github.com/kholeone/devops-core-fundamental-project-/blob/main/Documents/erd_ver_1.0.png)
+
 ##CI Pipeline
 
 ## Stage View
@@ -66,6 +71,8 @@ https://trello.com/b/9r3rbJG2/lucky-duck-app
 ### Risk Assessment
 Risk Assessment link: 
 https://drive.google.com/file/d/18dbeBYOijlBn2jIVVrRpjJASh52iZTPC/view?usp=sharing
+
+![alt text](https://github.com/kholeone/devops-core-fundamental-project-/blob/main/Documents/risk_assessment_snippet.png "risk assessment")
 
 ### Testing 
 
