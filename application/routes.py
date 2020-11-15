@@ -64,10 +64,16 @@ def add_detail(id):
         return redirect(url_for('detail', id=id))
     return render_template('add_detail.html', form=form,listing=Listing.query.get(id))
 
-
-@app.route('/delete_detail/<int:id>')
-def delete_detail(id):
-    delete_detail = Detail.query.get(id)
-    db.session.delete(delete_detail)
-    db.session.commit()
-    return redirect(url_for('index'))
+@app.route('/update_detail/<int:id>', methods=['GET', 'POST'])
+def update_detail(id):
+    form  = DetailForm()
+    upd = Detail.query.get(id)
+    if form.validate_on_submit():
+        upd.detail_description = form.detail_description.data,
+        upd.detail_category = form.detail_category.data,
+        db.session.commit()
+        return redirect(url_for('detail', id=upd.listing_id))
+    elif request.method == 'GET':
+        form.detail_description.data = upd.detail_description,
+        form.detail_category.data = upd.detail_category,
+    return render_template('update_detail.html', title='Update Detail', form=form, listing=Listing.query.get(upd.listing_id))

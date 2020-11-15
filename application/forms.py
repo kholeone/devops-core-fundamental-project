@@ -16,7 +16,7 @@ class ListingForm(FlaskForm):
                 ]
             )
      list_price = DecimalField('Price',
-            places=2, rounding=None, 
+            places=3, rounding=None, 
             validators = [
                 DataRequired()
                 ]
