@@ -2,9 +2,19 @@
 
 <form action='' method='POST'>
 	{{ form.hidden_tag() }}
-	{{ form.detail_description.label }} {{ form.detail_description }}
+	{{ form.detail_description.label }} {{ form.detail_description }}<br>
+	{% if form.detail_description.errors %}
+        {% for error in form.detail_description.errors %}
+        {{ error }}<br>
+        {% endfor %}
+        {% endif %}
 	<br><br>
-	{{ form.detail_category.label }} {{ form.detail_category }}
+	{{ form.detail_category.label }} {{ form.detail_category }}<br>
+	{% if form.detail_category.errors %}
+        {% for error in form.detail_category.errors %}
+        {{ error }}<br>
+        {% endfor %}
+        {% endif %}
 	<br><br>
 	{{ form.submit }}
 </form>
