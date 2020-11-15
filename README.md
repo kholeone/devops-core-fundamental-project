@@ -1,8 +1,8 @@
 # Lucky Duck App
 
 ## Resources 
-Trello Board: https://trello.com/b/9r3rbJG2/lucky-duck-app
-Website: http://34.105.136.167:5000/ | http://35.242.138.40:5000/
+- Application: http://34.105.136.167:5000/ | http://35.242.138.40:5000/
+- Trello Board: https://trello.com/b/9r3rbJG2/lucky-duck-app
 
 ## Contents
 
