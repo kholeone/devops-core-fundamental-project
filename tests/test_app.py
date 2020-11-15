@@ -10,7 +10,7 @@ class TestBase(TestCase):
 
         # Pass in testing configurations for the app. Here we use sqlite without a persistent database for our tests.
         app.config.update(SQLALCHEMY_DATABASE_URI="sqlite:///data.db",
-                SECRET_KEY='TEST_SECRET_KEY',
+                SECRET_KEY='sdfijsdiofsdjf',
                 DEBUG=True
                 )
         return app
@@ -23,11 +23,12 @@ class TestBase(TestCase):
         db.create_all()
 
         # Create test registree
-        listingtest = Listing(list_title="Nike Air Jordan 1 High", list_location="London, UK", list_price="339")
-        detailtest  = Detail(detail_description="One of the best shoes ever, limited release..will go fast!", detail_category="clothes")
+        listingtest = Listing(list_title = "Nike Air Jordan 1 High", list_location = "London, UK", list_price = 339)
+        detailtest  = Detail(listing_id = 1, detail_description = "One of the best shoes ever, limited release..will go fast!", detail_category = "clothes")
 
         # save users to database
         db.session.add(listingtest)
+        db.session.commit()
         db.session.add(detailtest)
         db.session.commit()
 
@@ -45,7 +46,7 @@ class TestViews(TestBase):
     def test_index_get(self):
 
         response = self.client.get(url_for('index'))
-        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.status_code,200)
 
     def test_add_get(self):
         response = self.client.get(url_for('add'))
