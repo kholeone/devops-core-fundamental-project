@@ -82,10 +82,15 @@ This is to analyse and detect differences in existing and required conditions, a
 
 ![alt text](https://github.com/kholeone/devops-core-fundamental-project-/blob/main/Documents/Screenshot%202020-11-15%20223302.png "unit testing")
 
+81% was achieved in the Unit Testing. There are areas of improvement in the testing which lies in the '**applications.routes.py**', but as it stands
+it was not huge of an issue to have the application fail as it is still functional.
+
 
 ### Front-End Design
 The front-end design is relatively simple, it features the basics of text boxes, hyperlinks,
 drop down menus, buttons and also a layout that provides ease of navigation.
+The focus of this area was not primary as the focus was directed to the back-end development of the application. 
+However a little effort was made to make it seem usable when interacted with and give an idea to the user what the design is asking them to do.
 
 
 ### Known Issues
