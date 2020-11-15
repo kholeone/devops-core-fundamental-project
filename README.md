@@ -65,6 +65,10 @@ It is able to store all the information in the database, able to create, read, u
 Here is a link to my Trello board, that was used to track the progress of the project:
 https://trello.com/b/9r3rbJG2/lucky-duck-app
 
+![alt text](https://github.com/kholeone/devops-core-fundamental-project-/blob/main/Documents/Screenshot%202020-11-15%20025715.png)
+This is the Trello board used throughout the duration of the project. Making the most of the tool to help track its progress. This has been 
+very helpful as it displays what needs to be done and what has been completed, focusing on areas of the projects that need attention the most.
+
 
 ### Risk Assessment
 Risk Assessment link: 
