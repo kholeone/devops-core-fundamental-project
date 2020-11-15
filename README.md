@@ -1,9 +1,7 @@
 # Lucky Duck App
 
 ## Resources 
-- Presentation:
-- Trello Board:
-- Website:
+- Trello Board: https://trello.com/b/9r3rbJG2/lucky-duck-app
 
 ## Contents
 
