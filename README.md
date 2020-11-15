@@ -74,8 +74,13 @@ Risk Assessment link:
 https://drive.google.com/file/d/18dbeBYOijlBn2jIVVrRpjJASh52iZTPC/view?usp=sharing
 
 ![alt text](https://github.com/kholeone/devops-core-fundamental-project-/blob/main/Documents/risk_assessment_snippet.png "risk assessment")
+The Risk Assessment was done to prepare, anticipate and deliver the reliefs of potential threats that can occur with the project.
 
 ### Testing 
+Testing has been done with Pytest, used in Python in a form of Unit Testing.
+This is to analyse and detect differences in existing and required conditions, and to evaluate the features of the application.
+
+
 
 ### Front-End Design
 The front-end design is relatively simple, it features the basics of text boxes, hyperlinks,
