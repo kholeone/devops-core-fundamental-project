@@ -1,22 +1,24 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, SelectField, DecimalField,  SubmitField
-from wtforms.validators import DataRequired, ValidationError
+from wtforms.validators import DataRequired, ValidationError, Length
 
 from application.models import Listing, Detail
 
 class ListingForm(FlaskForm):
      list_title = StringField('Title',
             validators = [
-                DataRequired()
+                DataRequired(),
+                Length(min=6, max=80, message='The text you entered is too short or long')
                 ]
             )
      list_location = StringField('Location',
             validators = [
-                DataRequired()
+                DataRequired(),
+                Length(min=6, max=80, message='The text you entered is too short or long')
                 ]
             )
      list_price = DecimalField('Price',
-            places=3, rounding=None, 
+            places=2, rounding=None, 
             validators = [
                 DataRequired()
                 ]
@@ -26,7 +28,8 @@ class ListingForm(FlaskForm):
 class DetailForm(FlaskForm):
      detail_description = StringField('Description',
             validators = [
-                DataRequired()
+                DataRequired(),
+                Length(min=6, max=4000, message='The text you entered is too short or long')
                 ]
             )
      detail_category = SelectField('All Categories',
