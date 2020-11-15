@@ -42,8 +42,9 @@ To achieve this, I have decided to produce a simple listing app that must allow 
 - Provide a location 
 - List a price
 - Write a detailed description
+(satisfies **Create**)
 
-- Read and update the listings (satisfies **Read** and **Update**.)
+- Read and update the listings (satisfies **Read** and **Update**)
 - Delete listings (satisfies **Delete**)
 
 ### Architecture
@@ -57,11 +58,9 @@ It is able to store all the information in the database, able to create, read, u
 
 ![alt text](https://github.com/kholeone/devops-core-fundamental-project-/blob/main/Documents/erd_ver_1.0.png)
 
-##CI Pipeline
+## CI Pipeline
 
-## Stage View
-
-## Project Tracking 
+### Project Tracking 
 Here is a link to my Trello board, that was used to track the progress of the project:
 https://trello.com/b/9r3rbJG2/lucky-duck-app
 
@@ -79,15 +78,18 @@ https://drive.google.com/file/d/18dbeBYOijlBn2jIVVrRpjJASh52iZTPC/view?usp=shari
 ### Testing 
 
 ### Front-End Design
-
 The front-end design is relatively simple, it features the basics of text boxes, hyperlinks,
 drop down menus, buttons and also a layout that provides ease of navigation.
 
 
 ### Known Issues
+- An issue with updating the details of a listing
+- When updating text, additional characters are present
+- Adding a detail when it has already been done will cause an issue
+
+
 
 ### Future Improvements
-
 There are many improvements that can be made to the application
 assuming having less time constraints and broadening of knowledge.
 Improvements such as:
@@ -98,6 +100,6 @@ Improvements such as:
 - Have a stylistic front-end design to make the application more appealing
 - Produce an application that was close to the original concept 
 - To have an application with minimal bugs
-### Authors
 
+### Authors
 Kholeo Taylor 
