@@ -56,7 +56,8 @@ which has gone through many iterations to provide the most realistic and logical
 ### Project Tracking
 
 ### Risk Assessment
-Here is a screenshot of the risk assessment:
+Risk Assessment link: 
+https://drive.google.com/file/d/18dbeBYOijlBn2jIVVrRpjJASh52iZTPC/view?usp=sharing
 
 ### Testing 
 
