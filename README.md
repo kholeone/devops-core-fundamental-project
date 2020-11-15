@@ -6,7 +6,7 @@
 ## Contents
 
 ### Brief
-- To create a CRUD application with utilisation of supporting tools,
+To create a CRUD application with utilisation of supporting tools,
 methodologies and technologies that encapsulate all core modules
 covered during training.
 
@@ -35,24 +35,18 @@ reports and evidence to support a TDD approach.
 Feature-Branch model which will subsequently be built through a CI
 server and deployed to a cloud-based virtual machine.
 
-
 #### My Approach
-To achieve this, I have decided to produce a simple listing app that must allow the user to do the following:
-- Title the listing
-- Provide a location 
-- List a price
-- Write a detailed description
-(satisfies **Create**)
-
-- Read and update the listings (satisfies **Read** and **Update**)
-- Delete listings (satisfies **Delete**)
+The approach that was chosen was to make an application that is like an online classified advertisement.
+It will be a simple design of just allowing the creating of listings that can be read by other users.
+This can be in a form of a service, or an item that is for sale. Updates can be applied to the listing 
+to allow adjustment, along with the deletion of a listing.Everything in the additional requirements have been 
+taken in consideration when having a approach to this project.
 
 ### Architecture
 Here is an entity relationship diagram (ERD) that shows the construction of the database 
 which has gone through many iterations to provide the most realistic and logical implementation in the app.
 
 ## Database Structure
-
 Here is a Entity relationship diagram (ERD). This is the final database structure chosen to build with the application.
 It is able to store all the information in the database, able to create, read, update and delete everything associated database.
 
@@ -61,20 +55,19 @@ It is able to store all the information in the database, able to create, read, u
 ## CI Pipeline
 
 ### Project Tracking 
+This is the Trello board used throughout the duration of the project. Utilising it to help track the development of the project. This has been 
+very helpful as it displays what needs to be done and what has been completed, focusing on the areas of the projects that need requires attention the most.
+![alt text](https://github.com/kholeone/devops-core-fundamental-project-/blob/main/Documents/Screenshot%202020-11-15%20025715.png)
+
 Here is a link to my Trello board, that was used to track the progress of the project:
 https://trello.com/b/9r3rbJG2/lucky-duck-app
 
-![alt text](https://github.com/kholeone/devops-core-fundamental-project-/blob/main/Documents/Screenshot%202020-11-15%20025715.png)
-This is the Trello board used throughout the duration of the project. Making the most of the tool to help track its progress. This has been 
-very helpful as it displays what needs to be done and what has been completed, focusing on areas of the projects that need attention the most.
-
 
 ### Risk Assessment
+The Risk Assessment was done to prepare, anticipate and deliver the reliefs of potential threats that can occur with the project.
+![alt text](https://github.com/kholeone/devops-core-fundamental-project-/blob/main/Documents/risk_assessment_snippet.png "risk assessment")
 Risk Assessment link: 
 https://drive.google.com/file/d/18dbeBYOijlBn2jIVVrRpjJASh52iZTPC/view?usp=sharing
-
-![alt text](https://github.com/kholeone/devops-core-fundamental-project-/blob/main/Documents/risk_assessment_snippet.png "risk assessment")
-The Risk Assessment was done to prepare, anticipate and deliver the reliefs of potential threats that can occur with the project.
 
 ### Testing 
 Testing has been done with Pytest, used in Python in a form of Unit Testing.
