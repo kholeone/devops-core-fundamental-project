@@ -23,13 +23,13 @@ class TestBase(TestCase):
         db.create_all()
 
         # Create test registree
-        listingtest = Listing(list_title = "Nike Air Jordan 1 High", list_location = "London, UK", list_price = 339)
-        detailtest  = Detail(listing_id = 1, detail_description = "One of the best shoes ever, limited release..will go fast!", detail_category = "clothes")
+        lister = Listing(list_title = "Nike Air Jordan 1 High", list_location = "London, UK", list_price = 339)
+        detailer = Detail(listing_id = 1, detail_description = "One of the best shoes ever, limited release..will go fast!", detail_category = "clothes")
 
         # save users to database
-        db.session.add(listingtest)
+        db.session.add(lister)
         db.session.commit()
-        db.session.add(detailtest)
+        db.session.add(detailer)
         db.session.commit()
 
     def tearDown(self):
