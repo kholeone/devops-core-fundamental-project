@@ -52,8 +52,16 @@ To achieve this, I have decided to produce a simple listing app that must allow 
 Here is an entity relationship diagram (ERD) that shows the construction of the database 
 which has gone through many iterations to provide the most realistic and logical implementation in the app.
 
+## Database Structure
 
-### Project Tracking
+##CI Pipeline
+
+## Stage View
+
+## Project Tracking 
+Here is a link to my Trello board, that was used to track the progress of the project:
+https://trello.com/b/9r3rbJG2/lucky-duck-app
+
 
 ### Risk Assessment
 Risk Assessment link: 
