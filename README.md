@@ -80,6 +80,7 @@ The Risk Assessment was done to prepare, anticipate and deliver the reliefs of p
 Testing has been done with Pytest, used in Python in a form of Unit Testing.
 This is to analyse and detect differences in existing and required conditions, and to evaluate the features of the application.
 
+![alt text](https://github.com/kholeone/devops-core-fundamental-project-/blob/main/Documents/Screenshot%202020-11-15%20223302.png "unit testing")
 
 
 ### Front-End Design
