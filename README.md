@@ -43,7 +43,7 @@ This can be in a form of a service, or an item that is for sale. Updates can be 
 to allow adjustment, along with the deletion of a listing.Everything in the additional requirements have been 
 taken in consideration when having a approach to this project.
 
-### Architecture
+#### Architecture
 Here is an entity relationship diagram (ERD) that shows the construction of the database 
 which has gone through many iterations to provide the most realistic and logical implementation in the app.
 
