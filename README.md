@@ -121,4 +121,4 @@ Improvements such as:
 - To have an application with minimal bugs
 
 ### Authors
-Kholeo Taylor 
+Kholeo Taylor 👻
