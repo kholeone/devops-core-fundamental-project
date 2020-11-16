@@ -58,8 +58,6 @@ to allow adjustment, along with the deletion of a listing.Everything in the addi
 taken in consideration when having a approach to this project.
 
 ### Architecture
-Here is an entity relationship diagram (ERD) that shows the construction of the database 
-which has gone through many iterations to provide the most realistic and logical implementation in the app.
 
 #### Database Structure
 Here is a Entity relationship diagram (ERD). This is the final database structure chosen to build with the application.
@@ -71,7 +69,7 @@ It is able to store all the information in the database, able to create, read, u
 The CI pipeine allows implementation efficiently, showing that coding devlopment has been doing in python, able to be pushed and pulled to the git version control system. Trello is keeping track of the current development which then cycles forward to the CI server Jenkins that updates the enviroment through automation.
 Testing was done through this along with the application being deployed on a virtual machine with gunicorn intergration acessing mySQL databases.
 
-![alt text](https://github.com/kholeone/devops-core-fundamental-project-/blob/main/Documents/Screenshot%202020-11-16%20033539.png "CI Pipeline")
+![alt text](https://github.com/kholeone/devops-core-fundamental-project-/blob/main/Documents/Screenshot%202020-11-16%20081716.png "CI Pipeline")
 
 ### Project Tracking 
 This is the Trello board used throughout the duration of the project. Utilising it to help track the development of the project. This has been 
