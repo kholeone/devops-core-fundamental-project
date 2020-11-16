@@ -70,5 +70,5 @@ class TestViews(TestBase):
    
     def test_update_detail_get(self):
         response = self.client.get(url_for('update_detail', id=1))
-        self.assertEqual(response.status_code,302)
+        self.assertEqual(response.status_code,200)
 
