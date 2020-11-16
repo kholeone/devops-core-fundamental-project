@@ -43,7 +43,7 @@ class TestAdd(TestBase):
 
     def test_add(self):
         """
-        Test that a user can add a routine when all feilds are filled correctly
+        A test process of adding a listing and implementing text in the input
         """
 
         self.driver.find_element_by_xpath("/html/body/a[2]").click()
