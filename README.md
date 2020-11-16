@@ -54,6 +54,8 @@ It is able to store all the information in the database, able to create, read, u
 ![alt text](https://github.com/kholeone/devops-core-fundamental-project-/blob/main/Documents/erd_ver_1.0.png)
 
 ## CI Pipeline
+The CI pipeine allows implementation efficiently, showing that coding devlopment has been doing in python, able to be pushed and pulled to the git version control system. Trello is keeping track of the current development which then cycles forward to the CI server Jenkins that updates the enviroment through automation.
+Testing was done through this along with the application being deployed on a virtual machine with gunicorn intergration acessing mySQL databases.
 
 ### Project Tracking 
 This is the Trello board used throughout the duration of the project. Utilising it to help track the development of the project. This has been 
@@ -77,7 +79,7 @@ This is to analyse and detect differences in existing and required conditions, a
 ![alt text](https://github.com/kholeone/devops-core-fundamental-project-/blob/main/Documents/Screenshot%202020-11-15%20223302.png "unit testing")
 
 81% was achieved in the Unit Testing. There are areas of improvement in the testing which lies in the '**applications.routes.py**', but as it stands
-it was not huge of an issue to have the application fail as it is still functional.
+it was not huge of an issue to have the application fail as it is still functional. Integration testing was also produced later in the testing phase which test different parts of the application work together. This was used mainly to test the CRUD aspects of the application.
 
 
 ### Front-End Design
@@ -89,10 +91,8 @@ However a little effort was made to make it seem usable when interacted with and
 
 ### Known Issues
 - An issue with updating the details of a listing
-- When updating text, additional characters are present
-- Adding a detail when it has already been done will cause an issue
-
-
+- When updating text, additional string characters are present
+- Adding a detail within a listing that has already been done will cause an error
 
 ### Future Improvements
 There are many improvements that can be made to the application
@@ -101,10 +101,10 @@ Improvements such as:
 
 - Having a login for sellers that want to create a listing.
 - Allow pictures to be uploaded to display the product.
-- Have a messaging system where users can publically or privately message each other in regards of the listing.
+- Have a messaging system where users can publically or privately message each   other in regards of the listing.
 - Have a stylistic front-end design to make the application more appealing
 - Produce an application that was close to the original concept 
 - To have an application with minimal bugs
 
-### Authors
+#### Authors
 Kholeo Taylor 
