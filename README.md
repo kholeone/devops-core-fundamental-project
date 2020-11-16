@@ -54,7 +54,7 @@ server and deployed to a cloud-based virtual machine.
 The approach that was chosen was to make an application that is like an online classified advertisement.
 It will be a simple design of just allowing the creating of listings that can be read by other users.
 This can be in a form of a service, or an item that is for sale. Updates can be applied to the listing 
-to allow adjustment, along with the deletion of a listing.Everything in the additional requirements have been 
+to allow adjustment, along with the deletion of a listing. Everything in the additional requirements have been 
 taken in consideration when having a approach to this project.
 
 ### Architecture
