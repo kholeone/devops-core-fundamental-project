@@ -1,10 +1,24 @@
-# Lucky Duck App
+# Lucky Duck App 🦆
+
 
 ## Resources 
 - Application: http://34.105.136.167:5000/ | http://35.242.138.40:5000/
 - Trello Board: https://trello.com/b/9r3rbJG2/lucky-duck-app
 
 ## Contents
+* [Brief](#brief)
+   * [Additional Requirements](#additional-requirements)
+   * [My Approach](#my-approach)
+* [Architecture](#architecture)
+   * [Database Structure](#database-structure)
+   * [CI Pipeline](#ci-pipeline)
+* [Project Tracking](#project-tracking)
+* [Risk Assessment](#risk-assessment)
+* [Testing](#testing)
+* [Front-End Design](#front-end-design)
+* [Known Issues](#known-issues)
+* [Future Improvements](#future-improvements)
+* [Authors](#authors)
 
 ### Brief
 To create a CRUD application with utilisation of supporting tools,
@@ -47,15 +61,17 @@ taken in consideration when having a approach to this project.
 Here is an entity relationship diagram (ERD) that shows the construction of the database 
 which has gone through many iterations to provide the most realistic and logical implementation in the app.
 
-## Database Structure
+#### Database Structure
 Here is a Entity relationship diagram (ERD). This is the final database structure chosen to build with the application.
 It is able to store all the information in the database, able to create, read, update and delete everything associated database.
 
 ![alt text](https://github.com/kholeone/devops-core-fundamental-project-/blob/main/Documents/erd_ver_1.0.png)
 
-## CI Pipeline
+#### CI Pipeline
 The CI pipeine allows implementation efficiently, showing that coding devlopment has been doing in python, able to be pushed and pulled to the git version control system. Trello is keeping track of the current development which then cycles forward to the CI server Jenkins that updates the enviroment through automation.
 Testing was done through this along with the application being deployed on a virtual machine with gunicorn intergration acessing mySQL databases.
+
+![alt text](https://github.com/kholeone/devops-core-fundamental-project-/blob/main/Documents/Screenshot%202020-11-16%20033539.png "CI Pipeline")
 
 ### Project Tracking 
 This is the Trello board used throughout the duration of the project. Utilising it to help track the development of the project. This has been 
@@ -106,5 +122,5 @@ Improvements such as:
 - Produce an application that was close to the original concept 
 - To have an application with minimal bugs
 
-#### Authors
+### Authors
 Kholeo Taylor 
