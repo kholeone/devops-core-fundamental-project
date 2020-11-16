@@ -1,4 +1,5 @@
-# Lucky Duck App
+# Lucky Duck App 🦆
+
 
 ## Resources 
 - Application: http://34.105.136.167:5000/ | http://35.242.138.40:5000/
