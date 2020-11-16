@@ -109,5 +109,5 @@ Improvements such as:
 - Produce an application that was close to the original concept 
 - To have an application with minimal bugs
 
-#### Authors
+### Authors
 Kholeo Taylor 
